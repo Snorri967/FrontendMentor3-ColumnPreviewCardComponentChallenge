@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* CSS RESET */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS VARIABLES */
+
+:root {
+  --BACKGROUND-HEADINGS-BUTTONS-COLOR: hsl(0, 0%, 95%);
+  --PARAGRAPH-COLOR: hsla(0, 0%, 100%, 0.75);
+  --SEDANS-COLOR: hsl(31, 77%, 52%);
+  --SUVS-COLOR: hsl(184, 100%, 22%);
+  --LUXURY-COLOR: hsl(179, 100%, 13%);
+  --TEXT-MARGIN-SP: 0 15% 5% 15%;
+  --TEXT-MARGIN: 0 20% 10% 20%;
+  --BUTTON-MARGIN: 10% 10% 15% 20%;
+  --IMG-MARGIN: 15% 20% 10% 20%;
+}
+
+/* BODY */
+
+body {
+  align-items: center;
+  background-color: var(--BACKGROUND-HEADINGS-BUTTONS-COLOR);
+  display: flex;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* MAIN */
+
+main {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
+h2 {
+  color: var(--BACKGROUND-HEADINGS-BUTTONS-COLOR);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+}
+
+p {
+  color: var(--PARAGRAPH-COLOR);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.93rem;
+  line-height: 1.5rem;
+}
+
+input {
+  border: 2px solid transparent;
+  background-color: var(--BACKGROUND-HEADINGS-BUTTONS-COLOR);
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Lexend Deca", cursive;
+  font-size: 0.93rem;
+  padding: 4% 9%;
+}
+
+.sedans {
+  background-color: var(--SEDANS-COLOR);
+}
+
+.sedan-button {
+  color: var(--SEDANS-COLOR);
+}
+
+.sedan-button:hover {
+  background-color: var(--SEDANS-COLOR);
+  border: 2px solid;
+  color: var(--PARAGRAPH-COLOR);
+}
+
+.suvs {
+  background-color: var(--SUVS-COLOR);
+}
+
+.suv-button:hover {
+  background-color: var(--SUVS-COLOR);
+  border: 2px solid;
+  color: var(--PARAGRAPH-COLOR);
+}
+
+.suv-button {
+  color: var(--SUVS-COLOR);
+}
+
+.luxury {
+  background-color: var(--LUXURY-COLOR);
+}
+
+.luxury-button {
+  color: var(--LUXURY-COLOR);
+}
+
+.luxury-button:hover {
+  background-color: var(--LUXURY-COLOR);
+  border: 2px solid;
+  color: var(--PARAGRAPH-COLOR);
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  main {
+    margin: 20% 5%;
+  }
+  h2 {
+    margin: var(--TEXT-MARGIN-SP);
+  }
+
+  p {
+    margin: var(--TEXT-MARGIN-SP);
+  }
+
+  input {
+    margin: 2.5% 12.5% 15% 15%;
+  }
+
+  img {
+    margin: 15% 15% 10% 15%;
+  }
+
+  .sedans {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  h2 {
+    margin: var(--TEXT-MARGIN);
+  }
+
+  p {
+    margin: var(--TEXT-MARGIN);
+  }
+
+  img {
+    margin: var(--IMG-MARGIN);
+  }
+
+  input {
+    margin: var(--BUTTON-MARGIN);
+  }
+
+  .sedans {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    max-width: 32%;
+  }
+
+  .suvs {
+    max-width: 32%;
+  }
+
+  .luxury {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 32%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  main {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  h2 {
+    margin: var(--TEXT-MARGIN);
+  }
+
+  p {
+    margin: var(--TEXT-MARGIN);
+  }
+
+  img {
+    margin: var(--IMG-MARGIN);
+  }
+
+  input {
+    margin: var(--BUTTON-MARGIN);
+  }
+
+  .sedans {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    max-width: 28%;
+  }
+
+  .suvs {
+    max-width: 28%;
+  }
+
+  .luxury {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 28%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  h2 {
+    margin: var(--TEXT-MARGIN);
+  }
+
+  p {
+    margin: var(--TEXT-MARGIN);
+  }
+
+  img {
+    margin: var(--IMG-MARGIN);
+  }
+
+  input {
+    margin: var(--BUTTON-MARGIN);
+  }
+
+  .sedans {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    max-width: 20%;
+  }
+
+  .suvs {
+    max-width: 20%;
+  }
+
+  .luxury {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 20%;
+  }
+}
